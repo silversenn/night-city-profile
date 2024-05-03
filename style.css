@@ -1,0 +1,400 @@
+body {
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/image/bg-night-city.png");
+  background-position: 50%;
+  background-size: cover;
+  background-color: grey;
+  color: white;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 20px;
+}
+
+#content {
+  border-radius: 10px;
+  padding: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: black;
+  transition: all 0.2s ease-in-out;
+  min-height: fit-content;
+  min-width: fit-content;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2,
+h3 {
+  color: red;
+}
+
+#History {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  column-gap: 16px;
+}
+
+p,
+td {
+  font-family: "Play", sans-serif;
+}
+
+#nc-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nc-profile h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#nc-profile h2 {
+  text-align: center;
+}
+
+#nc-profile th {
+  text-align: right;
+  color: red;
+}
+#economy-item {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-gap: 15px;
+  align-items: stretch;
+}
+
+#economy-item .card {
+  border-radius: 20px 20px 10px 10px;
+  border-style: solid;
+  border-width: 2px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+#economy-item .card:hover {
+  border-style: solid;
+  border-color: aqua;
+  border-width: 5px;
+  padding: 0px 15px 0px 15px;
+  cursor: pointer;
+
+  .corp-name {
+    background-color: aqua;
+    cursor: pointer;
+  }
+
+  .corp-logo {
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.corp-name {
+  height: 72px;
+  background-color: yellow;
+  text-align: center;
+  margin: 0px -25px 15px -25px;
+}
+
+.corp-name h3 {
+  padding: 15px;
+  margin: 0px;
+  font-size: large;
+}
+
+.corp-logo {
+  overflow: hidden;
+  width: fit-content;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#economy article {
+  margin-bottom: 32px;
+}
+
+#content h2 {
+  font-size: 150%;
+  margin-top: 45px;
+}
+
+.city-item {
+  margin: auto !important;
+  border: 2px yellow solid;
+  border-collapse: separate !important;
+  border-spacing: 2px !important;
+  color: inherit;
+}
+
+.city-item tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.city-item tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.city-item th {
+  font-size: larger;
+  padding: 25px;
+  background-color: yellow;
+  color: black;
+}
+
+.city-item td {
+  padding: 25px;
+}
+
+.city-item h3 {
+  text-align: center;
+}
+
+.city-item h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: red;
+}
+
+footer {
+  padding: 50px;
+  color: black;
+  background-color: yellow;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav a {
+  font-size: 18px;
+
+  font-weight: 400;
+  text-decoration: none;
+
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+figcaption {
+  font-size: 12px;
+  text-align: center;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border-width: 5px;
+  border-style: double;
+  border-color: yellow;
+  padding: 0px 20px 20px 20px;
+  margin-top: 20px;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: yellow;
+  text-align: center;
+  color: black;
+}
+
+.jumbotron h1 {
+  font-size: 3rem;
+  color: red;
+  font-weight: 900;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: black;
+  padding: 15px;
+  border: 5px solid yellow;
+  outline: black solid 3px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: red;
+  color: yellow;
+  padding: 12px;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul {
+  flex-wrap: wrap;
+  column-gap: 0.5rem;
+  display: flex;
+  justify-content: left;
+  gap: 2rem 1rem;
+}
+
+nav a:hover {
+  text-decoration: none;
+  background-color: yellow;
+  color: red;
+}
+.nc-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nc-preview .preview {
+  display: none;
+  padding: 0.5rem 2rem 2rem 2rem;
+  text-align: center;
+  background: black;
+  border: double 2px aqua;
+  position: relative;
+  margin: 2rem;
+  width: 40rem;
+}
+
+.nc-preview .preview.active {
+  display: inline-block;
+}
+
+.nc-preview .preview .x {
+  display: flex;
+  justify-content: end;
+  margin: 10px 0px 10px 10px;
+  font-size: 30px;
+  top: 15px;
+  right: 16px;
+  cursor: pointer;
+  color: red;
+}
+
+.nc-preview .preview .x:hover {
+  color: white;
+}
+
+.nc-preview .preview {
+  max-height: 80vh;
+  overflow: auto;
+
+  .prev-container {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #f75049;
+    margin-bottom: 10px;
+    color: #f75049;
+    overflow: auto;
+    padding: 1em;
+    text-align: left;
+  }
+
+  .prev-container h2 {
+    font-size: 24px;
+    color: aqua;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+  }
+
+  .prev-container .ncp-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .prev-container .ncp-item-header p {
+    font-size: small;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: yellow;
+    border-width: 1px;
+  }
+}
+
+.icon-image {
+  align-items: center;
+  width: fit-content;
+}
+
+@media screen and (max-width: 1200px) {
+  main #History {
+    flex-flow: column nowrap;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+
+  #content {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0;
+  }
+
+  main {
+    padding: 0;
+  }
+}
